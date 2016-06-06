@@ -1,0 +1,8 @@
+<h1>Memories</h1>
+<div class="memories">
+	<% @memories.each do |memory| %>
+		<div>
+			<p>Remember When... <%= memory.content %> - <%= memory.name %> </p>
+		</div>
+	<% end %>
+</div>
