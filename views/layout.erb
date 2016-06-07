@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Remember When</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<!-- Bootstrap theme by Blackrock Digital LLC via startbootstrap.com Copyright (c) 2013-2016 Blackrock Digital LLC. License: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE -->
+
+		<title>Remember When</title>
+
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+	    <meta name="author" content="">
+
+		<!-- Noramlize CSS -->
+		<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+		<!-- Bootstrap Core CSS -->
+	    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+	    <!-- Custom CSS -->
+	    <link href="/css/modern-business.css" rel="stylesheet">
+
+	    <!-- Custom Fonts -->
+	    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+			
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="col-lg-12">
+				<h1 class="page-header">Share Your Favorite Memories and Moments</h1>
+				</div>
+			</header>
+		</div>
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<main>
+			<%= yield %>
+		</main>
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="/public/normalize.css">
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-	<link rel="stylesheet" type="text/css" href="/public/style.css">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</head>
-<body>
-	<div class="container">
-		<header>
-			<h2>Share Your Favorite Memories, Moments, and Experiences</h2>
-			<form action="/memories/new" method="get">
-				<button class="btn">Add Memory</button>
-			</form>
-		</header>
-	</div>
-	<br>
-	<main>
-		<%= yield %>
-	</main>
-</body>
-<footer>
-</footer>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+	<footer>
+	</footer>
 </html>

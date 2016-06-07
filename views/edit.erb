@@ -1,16 +1,19 @@
-<h2>Edit Memory</h2>
+<div class="container">
+	<h2>Edit Memory</h2>
+</div>
+<div class="container">
+	<form action='/memories/<%= @memory.id %>' method="post">
+		<label for="memory[name]"> Name:</label>
+		<input name="memory[name]" value="<%= @memory.name %>">
 
-<form action='/memories/<%= @memory.id %>' method="post">
-	<label for="memory[name]"> Name:</label>
-	<input name="memory[name]" value="<%= @memory.name %>">
+		<label for="memory[title]">Title:</label>
+		<input name="memory[title]" maxlength="140" value="<%= @memory.title %>">
 
-	<label for="memory[title]">Title:</label>
-	<input name="memory[title]" maxlength="140" value="<%= @memory.title %>">
-
-	<br>
-	
-	<textarea name="memory[content]" rows="10" cols="60" maxlength="1000"><%= @memory.content %></textarea>
-	
-	<br>
-	<input class="btn" type="submit" value="Update">
-</form>
+		<br>
+		
+		<textarea name="memory[content]" rows="10" cols="60" maxlength="1000"><%= @memory.content %></textarea>
+		
+		<br>
+		<input class="btn" type="submit" value="Update">
+	</form>
+</div>
