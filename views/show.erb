@@ -1,0 +1,18 @@
+<div class="container">
+	<h4>Remember When... <%= @memory.title %></h4>
+	<big><p><%= @memory.content %></p></big>
+	<h5><%= @memory.name %></h5>
+</div>
+<div class="container">
+	<form action="/memories/<%= @memory.id %>/edit" method="get">
+		<button class="btn">Edit Memory</button>
+	</form>
+	<br>
+	<form class="" action="/memories/<%= @memory.id %>/delete" method="post">
+		<button class="btn">Delete Memory</button>
+	</form>
+	<br>	
+	<form action="/memories">
+		<button class="btn">Memories</button>
+	</form>
+</div>

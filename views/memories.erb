@@ -1,8 +1,7 @@
-<h1>Memories</h1>
-<div class="memories">
+<div class=" container memories">
 	<% @memories.each do |memory| %>
 		<div>
-			<p>Remember When... <%= memory.content %> - <%= memory.name %> </p>
+			<big><span>Remember When... <%= memory.title %> - <%= memory.name %> </span>|<a href="/memories/<%= memory.id %>">Read Story...</a></big>
 		</div>
 	<% end %>
 </div>

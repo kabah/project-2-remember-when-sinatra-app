@@ -4,6 +4,7 @@ Bundler.require
 
 require './models/memory'
 require './app'
-require './db/seeds'
+
+# require './db/seeds'
 
 run RememberWhen
