@@ -3,6 +3,9 @@ class RememberWhen < Sinatra::Base
 	#index
 	get '/memories' do
 		@memories = Memory.order(created_at: :desc).all
+		@rand1 = Memory.limit(1).order("RANDOM()")
+		@rand2 = Memory.limit(1).order("RANDOM()")
+		# p @rand[0].name
 		erb :memories
 	end
 	

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<!-- Bootstrap theme by Blackrock Digital LLC via startbootstrap.com Copyright (c) 2013-2016 Blackrock Digital LLC. License: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE -->
 
@@ -23,24 +24,40 @@
 	    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 			
 	</head>
+
 	<body>
+		<% if request.path_info == '/memories'  %>
+			<%= erb :header %>
+		<% end %>
+		<!-- Page Content -->
 		<div class="container">
-			<header>
-				<div class="col-lg-12">
+
+			<div class="col-lg-12">
 				<h1 class="page-header">Share Your Favorite Memories and Moments</h1>
-				</div>
-			</header>
-		</div>
+			</div>
 	
-		<main>
-			<%= yield %>
-		</main>
+			<main>
+				<%= yield %>
+			</main>
+
+			<footer>
+			</footer>
+		
+		</div>
+
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
+
+		    <!-- Script to Activate the Carousel -->
+	    <script>
+	    $('.carousel').carousel({
+	        interval: 3500 //changes the speed
+	    })
+	    </script>
+
 	</body>
-	<footer>
-	</footer>
+
 </html>

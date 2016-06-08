@@ -1,9 +1,12 @@
+
+
 <div class="container">
 	<form action="/memories/new" method="get">
 		<button class="btn">Add Memory</button>
 	</form>
 </div>
-<div class=" container memories">
+
+<div class="container memories">
 	<% @memories.each do |memory| %>
 		<div>
 			<span>Remember When... <%= memory.title %> - <%= memory.name %> </span>|<a href="/memories/<%= memory.id %>">Read Story...</a>
