@@ -10,23 +10,24 @@
 	        <!-- Wrapper for slides -->
 	        <div class="carousel-inner">
 	            <div class="item active">
-	                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Ms Spontaneous');"></div>
+	                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=<%= @rand1[0].name %>');"></div>
 	                <div class="carousel-caption">
 	                    <!-- <h2>We had an unexpected adventure</h2> -->
-						<h2><%= @rand1[0].title %></h2>
+						<h2>Remember when <%= @rand1[0].title %></h2>
 	                </div>
 	            </div>
 	            <div class="item">
-	                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Mr Fun');"></div>
+	                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=<%= @rand2[0].name %>');"></div>
 	                <div class="carousel-caption">
 	                    <!-- <h2>We had the most fun ever</h2> -->
-	                    <h2><%= @rand2[0].title %></h2>
+	                    <h2>Remember when <%= @rand2[0].title %></h2>
 	                </div>
 	            </div>
 	            <div class="item">
-	                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Super Mom');"></div>
+	                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=<%= @rand3[0].name %>');"></div>
 	                <div class="carousel-caption">
-	                    <h2>I went into labor...over and over and over again!</h2>
+	                    <h2>Remember when <%= @rand3[0].title %></h2>
+	                    <!-- <h2>I went into labor...over and over and over again!</h2> -->
 	                </div>
 	            </div>
 	        </div>

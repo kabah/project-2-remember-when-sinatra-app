@@ -1,3 +1,11 @@
 form {
 display: inline;
 }
+
+#mem-add-new {
+	margin-bottom: 15px;
+}
+
+#back {
+	margin-bottom: 15px;
+}

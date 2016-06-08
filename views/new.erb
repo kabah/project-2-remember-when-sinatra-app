@@ -1,14 +1,12 @@
 
-<div class="container">
-	<form action='/memories' method="post">
-		<input name="memory[name]" placeholder="Name">
-
-		<input name="memory[title]" maxlength="140" placeholder="Title: 140 Char. Max">
-
-		<br>
-		<textarea name="memory[content]" rows="10" cols="41" maxlength="1000" placeholder="Share your story..."></textarea>
-		
-		<br>
-		<input class="btn" type="submit" value="Create Memory">
+<div class="well">
+	<h4>Add New Memory:</h4>
+	<form role=form action='/memories' method="post">
+		<div class="form-group">
+			<input class="form-control" name="memory[name]" placeholder="Name">
+			<input class="form-control" name="memory[title]" maxlength="140" placeholder="Remember When...">
+			<textarea class="form-control" name="memory[content]" rows="10" cols="41" maxlength="1000" placeholder="Share your story..."></textarea>
+		</div>
+		<button class="btn btn-primary" type="submit">Submit</button>
 	</form>
 </div>	
