@@ -1,0 +1,32 @@
+<!-- Button trigger modal -->
+<button class="btn btn-primary" data-toggle="modal" data-target="#addMemoryModal">Add Memory</button>
+
+<!-- Modal -->
+<div class="modal fade" id="addMemoryModal" tabindex="-1" role="dialog" 
+     aria-labelledby="addMemoryModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="addMemoryModal">
+                    Add New Memory:
+                </h4>
+            </div>
+
+            <!-- Modal Body -->
+      <div class="modal-body">
+		<form role=form action='/memories' method="post">
+			<div class="form-group">
+				<input class="form-control" name="memory[name]" placeholder="Name">
+				<input class="form-control" name="memory[title]" maxlength="140" placeholder="Remember When...">
+				<textarea class="form-control" name="memory[content]" rows="10" cols="41" maxlength="1000" placeholder="Share your story..."></textarea>
+			</div>
+			<button class="btn btn-primary" type="submit">Submit</button>
+		</form>
+      </div>

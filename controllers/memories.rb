@@ -17,7 +17,7 @@ class RememberWhen < Sinatra::Base
 	post '/memories' do
 		@memory = Memory.new(params[:memory])
 		if @memory.save
-			redirect("/memories/#{@memory.id}")
+			redirect("/memories")
 		else
 			erb :new 
 		end
