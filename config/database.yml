@@ -1,3 +1,7 @@
 development:
   adapter: postgresql
   database: remember_when_development
+
+production:
+  adapter: postgresql
+  database: remember_when_development
