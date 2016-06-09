@@ -1,5 +1,10 @@
 class RememberWhen < Sinatra::Base
 	
+
+	before'/*' do
+		current_user
+	end
+
 	#index
 	get '/' do
 		redirect ('/memories')

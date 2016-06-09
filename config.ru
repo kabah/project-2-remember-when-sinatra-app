@@ -5,6 +5,8 @@ Bundler.require
 
 require './app'
 
+require './helpers/session_helpers'
+
 require './models/memory'
 require './models/comments'
 
