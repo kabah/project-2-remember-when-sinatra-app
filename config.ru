@@ -3,13 +3,13 @@ require 'bundler'
 Bundler.require
 
 
-require './app'
+require './app/app'
 
-require './models/memory'
-require './models/comments'
+require './app/models/memory'
+require './app/models/comments'
 
-require './controllers/memories'
-require './controllers/comments'
+require './app/controllers/memories'
+require './app/controllers/comments'
 
 # require './db/seeds'
 
