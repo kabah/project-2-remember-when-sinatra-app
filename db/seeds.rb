@@ -1,12 +1,26 @@
-500.times do 
-	a = Memory.new
-	a.name = Faker::Name.first_name
-	a.title = Faker::Lorem.sentence
-	a.content = Faker::Lorem.paragraph(8)
-	a.created_at =Faker::Date.forward(365)
+# Memory.destroy_all
 
-	a.save
-end
+# 10.times do 
+# 	m = Memory.new
+# 	m.name = Faker::Name.first_name
+# 	m.title = Faker::Lorem.sentence
+# 	m.content = Faker::Lorem.paragraph(8)
+# 	m.created_at =Faker::Date.forward(365)
+
+# 	m.save
+# end
+
+# 14.times do
+
+# 	id_counter = 1
+
+# 	c = Comment.new
+# 	c.content = Faker::Lorem.sentence
+# 	c.memory_id = id_counter
+
+# 	id_counter += 1
+
+# end
 
 
 # Memory.create(name: 'User One', title: 'I went into labor', content: 'I gave birth to my five kids...at the same time. QUINTUPLETS!')

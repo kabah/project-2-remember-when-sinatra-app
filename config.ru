@@ -2,8 +2,14 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
-require './models/memory'
+
 require './app'
+
+require './models/memory'
+require './models/comments'
+
+require './controllers/memories'
+require './controllers/comments'
 
 # require './db/seeds'
 
