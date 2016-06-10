@@ -1,28 +1,28 @@
 # Memory.destroy_all
-# require_relative '../models/memory'
-# require_relative '../models/comments'
-# require 'faker'
+require_relative '../models/memory'
+require_relative '../models/comments'
+require 'faker'
 
-# 100.times do 
-# 	m = Memory.new
-# 	m.name = Faker::Name.first_name
-# 	m.title = Faker::Lorem.sentence
-# 	m.content = Faker::Lorem.paragraph(8)
-# 	m.created_at =Faker::Date.forward(365)
+100.times do 
+	m = Memory.new
+	m.name = Faker::Name.first_name
+	m.title = Faker::Lorem.sentence
+	m.content = Faker::Lorem.paragraph(8)
+	m.created_at =Faker::Date.forward(365)
 
-# 	m.save
-# end
+	m.save
+end
 
-200.times do
+# 200.times do
 
-	id_counter = 3
+# 	id_counter = 3
 
-	c = Comment.new
-	c.name = Faker::Name.first_name
-	c.content = Faker::Lorem.sentence
-	c.memory_id = id_counter
-	id_counter = id_counter + 1
-	c.save
+# 	c = Comment.new
+# 	c.name = Faker::Name.first_name
+# 	c.content = Faker::Lorem.sentence
+# 	c.memory_id = id_counter
+# 	id_counter = id_counter + 1
+# 	c.save
 
 
 end
