@@ -1,14 +1,16 @@
 # Memory.destroy_all
+require_relative '../models/memory'
+require 'faker'
 
-# 10.times do 
-# 	m = Memory.new
-# 	m.name = Faker::Name.first_name
-# 	m.title = Faker::Lorem.sentence
-# 	m.content = Faker::Lorem.paragraph(8)
-# 	m.created_at =Faker::Date.forward(365)
+10.times do 
+	m = Memory.new
+	m.name = Faker::Name.first_name
+	m.title = Faker::Lorem.sentence
+	m.content = Faker::Lorem.paragraph(8)
+	m.created_at =Faker::Date.forward(365)
 
-# 	m.save
-# end
+	m.save
+end
 
 # 14.times do
 
