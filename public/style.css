@@ -1,4 +1,4 @@
-body {
+html, body {
 	background-color: darkgray;
 }
 form {
@@ -12,3 +12,23 @@ display: inline;
 #back {
 	margin-bottom: 15px;
 }
+
+h2 {
+	font-size: 4.5vw;
+	text-shadow: 2px 2px black;
+}
+
+.rand-pic {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	vertical-align: center;
+}
+
+.display-1 {
+	color: white;
+	font-size: 5em;
+	text-shadow: 3px 3px black;
+}
+

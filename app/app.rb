@@ -2,16 +2,20 @@ class RememberWhen < Sinatra::Base
 	
 	#index
 	get '/' do
-		redirect ('/memories')
-	end
-
-	get '/memories' do
 		@memories = Memory.order(id: :desc).all
 		@rand1 = Memory.limit(1).order("RANDOM()")
 		@rand2 = Memory.limit(1).order("RANDOM()")
 		@rand3 = Memory.limit(1).order("RANDOM()")
-		erb :memories
+		erb :index
 	end
+
+	# get '/memories' do
+	# 	@memories = Memory.order(id: :desc).all
+	# 	@rand1 = Memory.limit(1).order("RANDOM()")
+	# 	@rand2 = Memory.limit(1).order("RANDOM()")
+	# 	@rand3 = Memory.limit(1).order("RANDOM()")
+	# 	erb :memories
+	# end
 	
 	# #new
 	# get '/memories/new' do

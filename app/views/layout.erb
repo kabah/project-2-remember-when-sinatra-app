@@ -21,7 +21,7 @@
 	    <link href="/css/modern-business.css" rel="stylesheet">
 
 	    <!-- Custom Fonts -->
-	    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	    <!-- My Custom CSS -->
 	    <link rel="stylesheet" type="text/css" href="/style.css">
@@ -29,7 +29,7 @@
 	</head>
 
 	<body>
-		<% if request.path_info == '/memories'  %>
+		<% if request.path_info == '/'  %>
 			<%= erb :header %>
 		<% end %>
 		<!-- Page Content -->
@@ -53,7 +53,7 @@
 		    <!-- Script to Activate the Carousel -->
 	    <script>
 	    $('.carousel').carousel({
-	        interval: 3500 //changes the speed
+	        interval: 6500 //changes the speed
 	    })
 	    </script>
 

@@ -1,11 +1,10 @@
 <!-- Page Content -->
 <div class="container">
 <!-- Content Panel -->
-	
 	<div class="col-lg-12">
 		<div>
-			<form action="/memories">
-				<button id="back" class="btn">Back</button>
+			<form action="/">
+				<button id="back" class="btn btn-default">Back</button>
 			</form>
 		</div>
 		<div class="panel panel-default">
@@ -16,43 +15,57 @@
 			<div class="panel-body">
 				<big><p> <%= @memory.content %><p></big>
 				<h4><%= @memory.name %></h4>
-				<div class="container">
-					<form action="/memories/<%= @memory.id %>/edit" method="get">
-						<button class="btn btn-warning">Edit Memory</button>
+				<div>
+					<!-- Button trigger modal -->
+					<button class="btn btn-default" data-toggle="modal" data-target="#addCommentModal">Add Comment</button>
+					<form action="/<%= @memory.id %>/edit" method="get">
+						<button class="btn btn-default">Edit Memory</button>
 					</form>
-					<form class="" action="/memories/<%= @memory.id %>/delete" method="post">
-						<button class="btn btn-danger">Delete Memory</button>
-					</form>	
+					<form class="" action="/<%= @memory.id %>/delete" method="post">
+						<button class="btn btn-default">Delete Memory</button>
+					</form>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<!-- Comment Section -->
-	<div class="col-lg-12">
-		<div class="well">
-		    <h4>Leave a Comment:</h4>
-		    <form role="form" action="/memories/<%= @memory.id %>/comments" method="post">
-		        <div class="form-group">
-			        <input class="form-control" placeholder="Name" name="comment[name]">
-		            <textarea class="form-control" name="comment[content]" rows="3"></textarea>
-		        </div>
-		        <button type="submit" class="btn btn-primary">Post</button>
-		    </form>
+		<!-- Modal -->
+		<div class="modal fade" id="addCommentModal" tabindex="-1" role="dialog" aria-labelledby="addCommentModal" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <!-- Modal Header -->
+		            <div class="modal-header">
+		                <button type="button" class="close" data-dismiss="modal">
+			                <span aria-hidden="true">&times;</span>
+			                <span class="sr-only">Close</span>
+		                </button>
+		                <h4 class="modal-title" id="addCommentModal">
+		                    Add New Comment:
+		                </h4>
+		            </div>	
+					<!-- Modal Body -->
+					<div class="modal-body">
+						<form role="form" action="/<%= @memory.id %>/comments" method="post">
+					        <div class="form-group">
+						        <input class="form-control" placeholder="Name" name="comment[name]">
+					            <textarea class="form-control" name="comment[content]" rows="3"></textarea>
+					        </div>
+					        <button type="submit" class="btn btn-default">Post</button>
+					    </form>
+					</div>
+		      </div>
+	      </div>
 		</div>
-		<hr>
+		<!-- Comment Section -->
 		<!-- Posted Comments -->
-		<!-- Comment -->
-			<div>
-			    <% @memory.comments.each do |comment| %>
-				    <div class="panel">
-				        <div class="panel-body">
-				            <big><p><%= comment.content %></p></big>
-				            <h5>-<%= comment.name %></h5>
-				            <small><h6 class="media-heading"><%= comment.created_at.strftime('%a %b %d, %Y') %></h6></small>
-				        </div>
-				    </div>
-		        <% end %>
-	        <div>
+		<div class="comments">
+		    <% @memory.comments.each do |comment| %>
+			    <div class="panel">
+			        <div class="panel-body">
+			            <big><p><%= comment.content %></p></big>
+			            <h5>-<%= comment.name %></h5>
+			            <small><h6 class="media-heading"><%= comment.created_at.strftime('%a %b %d, %Y') %></h6></small>
+			        </div>
+			    </div>
+	        <% end %>
 	    </div>
+	</div>
 </div>

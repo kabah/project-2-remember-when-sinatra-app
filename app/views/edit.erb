@@ -1,6 +1,6 @@
 <div class="well">
 	<h4>EditMemory:</h4>
-	<form role=form action='/memories/<%= @memory.id %>' method="post">
+	<form role=form action='/<%= @memory.id %>' method="post">
 		<div class="form-group">
 			<label for="memory[name]"> Name:</label>
 			<input class="form-control" name="memory[name]" value="<%= @memory.name %>">
