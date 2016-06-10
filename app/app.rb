@@ -2,6 +2,7 @@ class RememberWhen < Sinatra::Base
 	
 	#index
 	get '/' do
+		File.read(File.join('public', 'index.html'))
 		@memories = Memory.order(id: :desc).all
 		@rand1 = Memory.limit(1).order("RANDOM()")
 		@rand2 = Memory.limit(1).order("RANDOM()")
