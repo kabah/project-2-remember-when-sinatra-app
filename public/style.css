@@ -1,21 +1,26 @@
 html, body {
-	background-color: darkgray;
+	background-image: url("/imgs/bg.jpeg");
+	background-color: #003366;
 }
 form {
 display: inline;
 }
 
-#mem-add-new {
-	margin-bottom: 15px;
-}
-
-#back {
-	margin-bottom: 15px;
-}
-
 h2 {
 	font-size: 4.5vw;
 	text-shadow: 2px 2px black;
+}
+
+.page-header {
+	color: white;
+}
+
+.panel {
+	border-radius: 15px;
+}
+
+.panel-heading {
+	border-radius: 15px;
 }
 
 .rand-pic {
@@ -32,3 +37,10 @@ h2 {
 	text-shadow: 3px 3px black;
 }
 
+#mem-add-new {
+	margin-bottom: 15px;
+}
+
+#back {
+	margin-bottom: 15px;
+}

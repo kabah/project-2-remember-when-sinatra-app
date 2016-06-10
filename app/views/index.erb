@@ -1,6 +1,6 @@
 <div class="container">
-	<div class="row">
-		<div class="col-lg-12">
+	<div class="col-lg-12 row">
+		<div class="">
 			<h1 class="page-header">Share Your Favorite Memories</h1>
 			<!-- Button trigger modal -->
 			<button id="mem-add-new" class="btn btn-default" data-toggle="modal" data-target="#addMemoryModal">Add Memory</button>
@@ -33,7 +33,6 @@
 		</div>
 		<div class="memories">
 			<% @memories.each do |memory| %>
-				<div class="col-lg-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h4><%= memory.name %></h4>
@@ -43,7 +42,6 @@
 							<a href="/<%= memory.id %>" class="btn btn-default">Read Story...</a>
 						</div>
 					</div>
-				</div>
 			<% end %>
 		</div>
 	</div>

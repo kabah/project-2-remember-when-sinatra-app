@@ -1,28 +1,31 @@
 # Memory.destroy_all
-require_relative '../models/memory'
-require 'faker'
+# require_relative '../models/memory'
+# require_relative '../models/comments'
+# require 'faker'
 
-10.times do 
-	m = Memory.new
-	m.name = Faker::Name.first_name
-	m.title = Faker::Lorem.sentence
-	m.content = Faker::Lorem.paragraph(8)
-	m.created_at =Faker::Date.forward(365)
+# 100.times do 
+# 	m = Memory.new
+# 	m.name = Faker::Name.first_name
+# 	m.title = Faker::Lorem.sentence
+# 	m.content = Faker::Lorem.paragraph(8)
+# 	m.created_at =Faker::Date.forward(365)
 
-	m.save
-end
-
-# 14.times do
-
-# 	id_counter = 1
-
-# 	c = Comment.new
-# 	c.content = Faker::Lorem.sentence
-# 	c.memory_id = id_counter
-
-# 	id_counter += 1
-
+# 	m.save
 # end
+
+200.times do
+
+	id_counter = 3
+
+	c = Comment.new
+	c.name = Faker::Name.first_name
+	c.content = Faker::Lorem.sentence
+	c.memory_id = id_counter
+	id_counter = id_counter + 1
+	c.save
+
+
+end
 
 
 # Memory.create(name: 'User One', title: 'I went into labor', content: 'I gave birth to my five kids...at the same time. QUINTUPLETS!')

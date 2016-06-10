@@ -59,6 +59,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (~> 4.2.3)
+  activesupport
   faker
   pg (~> 0.18.2)
   rake
