@@ -1,6 +1,7 @@
 # Memory.destroy_all
-require_relative '../models/memory'
 # require_relative '../models/comments'
+
+require_relative './app/models/memory'
 require 'faker'
 
 100.times do 
