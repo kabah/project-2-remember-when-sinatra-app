@@ -17,12 +17,12 @@
 				<h4><%= @memory.name %></h4>
 				<div>
 					<!-- Button trigger modal -->
-					<button class="btn btn-default" data-toggle="modal" data-target="#addCommentModal">Add Comment</button>
+					<button class="btn btn-default" data-toggle="modal" data-target="#addCommentModal">Comment</button>
 					<form action="/<%= @memory.id %>/edit" method="get">
-						<button class="btn btn-default">Edit Memory</button>
+						<button class="btn btn-default">Edit</button>
 					</form>
 					<form class="" action="/<%= @memory.id %>/delete" method="post">
-						<button class="btn btn-default">Delete Memory</button>
+						<button class="btn btn-default">Delete</button>
 					</form>
 				</div>
 			</div>
