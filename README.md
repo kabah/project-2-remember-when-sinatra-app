@@ -11,6 +11,7 @@ Remember When allows users to post and share their memories as anecdotes.
 * Ruby
 * Sinatra
 * PostgresSQL
+* Unsplash.com (carousel images)
 * Bootstrap (Bootstrap theme by Blackrock Digital LLC via startbootstrap.com Copyright (c) 2013-2016 Blackrock Digital LLC. License: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 
 ![img](/screenshots/addNew.png)
