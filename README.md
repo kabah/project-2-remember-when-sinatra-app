@@ -1,10 +1,10 @@
 # Remember When
 ### by Kabah Conda
 
-(Site)(rememberwhen.herokuapp.com)
+[Site](rememberwhen.herokuapp.com)
 
 Remember When allows users to post and share their memories as anecdotes. 
-!(img)(screenshots/homepage.png)
+![img](screenshots/homepage.png)
 
 ##Technologies
 
@@ -13,17 +13,17 @@ Remember When allows users to post and share their memories as anecdotes.
 * PostgresSQL
 * Bootstrap (Bootstrap theme by Blackrock Digital LLC via startbootstrap.com Copyright (c) 2013-2016 Blackrock Digital LLC. License: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 
-!(img)(screenshots/addnew.png)
-!(img)(screenshots/postwithcomment)
+![img](screenshots/addnew.png)
+![img](screenshots/postwithcomment)
 
 ##Coming Soon
 
-*User authintication/login
+*User authintication, login
 *Categories with filters
 *Search
 *Nested comments
 *Image upload with post
-*Share via email/social networks
+*Share via email, social networks
 *Post to social networks
 
 ##Shout Outs
