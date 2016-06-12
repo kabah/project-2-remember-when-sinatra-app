@@ -1,10 +1,12 @@
 # Remember When
 ### by Kabah Conda
 
-[Site](http://rememberwhen.herokuapp.com)
+[Live Site](http://rememberwhen.herokuapp.com)
 
 Remember When allows users to post and share their memories as anecdotes. 
 ![img](/screenshots/homePage.png)
+![img](/screenshots/addNew.png)
+![img](/screenshots/postWithComment.png)
 
 ##Technologies
 
@@ -17,8 +19,9 @@ Remember When allows users to post and share their memories as anecdotes.
 * Unsplash.com (carousel images)
 * Bootstrap (Bootstrap theme by Blackrock Digital LLC via startbootstrap.com Copyright (c) 2013-2016 Blackrock Digital LLC. License: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 
-![img](/screenshots/addNew.png)
-![img](/screenshots/postWithComment.png)
+![img](/screenshots/RememberWhenERD.png)
+![img](/screenshots/RememberWhenWireframe.png) 
+
 
 ##Coming Soon
 
