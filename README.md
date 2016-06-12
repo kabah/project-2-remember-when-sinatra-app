@@ -4,7 +4,7 @@
 [Site](rememberwhen.herokuapp.com)
 
 Remember When allows users to post and share their memories as anecdotes. 
-![img](/screenshots/homepage.png)
+![img](/screenshots/homePage.png)
 
 ##Technologies
 
@@ -13,8 +13,8 @@ Remember When allows users to post and share their memories as anecdotes.
 * PostgresSQL
 * Bootstrap (Bootstrap theme by Blackrock Digital LLC via startbootstrap.com Copyright (c) 2013-2016 Blackrock Digital LLC. License: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 
-![img](/screenshots/addnew.png)
-![img](/screenshots/postwithcomment)
+![img](/screenshots/addNew.png)
+![img](/screenshots/postWithComment.png)
 
 ##Coming Soon
 
