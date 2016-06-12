@@ -25,6 +25,21 @@
 						<button class="btn btn-default">Delete</button>
 					</form>
 				</div>
+				<!-- Comment Section -->
+				<!-- Posted Comments -->
+				<div class="comments">
+				    <% @memory.comments.each do |comment| %>
+				    <hr>
+					    <div class="">
+					        <div class="">
+					            <big><p><%= comment.content %></p></big>
+					            <h5>-<%= comment.name %></h5>
+					            <small><h6 class="media-heading"><%= comment.created_at.strftime('%a %b %d, %Y') %></h6></small>
+					        </div>
+					    </div>
+			        <% end %>
+			    </div>
+
 			</div>
 		</div>
 		<!-- Modal -->
@@ -54,18 +69,6 @@
 		      </div>
 	      </div>
 		</div>
-		<!-- Comment Section -->
-		<!-- Posted Comments -->
-		<div class="comments">
-		    <% @memory.comments.each do |comment| %>
-			    <div class="panel">
-			        <div class="panel-body">
-			            <big><p><%= comment.content %></p></big>
-			            <h5>-<%= comment.name %></h5>
-			            <small><h6 class="media-heading"><%= comment.created_at.strftime('%a %b %d, %Y') %></h6></small>
-			        </div>
-			    </div>
-	        <% end %>
-	    </div>
+		<!-- comment section -->
 	</div>
 </div>
