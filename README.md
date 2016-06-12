@@ -4,7 +4,7 @@
 [Site](rememberwhen.herokuapp.com)
 
 Remember When allows users to post and share their memories as anecdotes. 
-![img](screenshots/homepage.png)
+![img](/screenshots/homepage.png)
 
 ##Technologies
 
@@ -13,28 +13,28 @@ Remember When allows users to post and share their memories as anecdotes.
 * PostgresSQL
 * Bootstrap (Bootstrap theme by Blackrock Digital LLC via startbootstrap.com Copyright (c) 2013-2016 Blackrock Digital LLC. License: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
 
-![img](screenshots/addnew.png)
-![img](screenshots/postwithcomment)
+![img](/screenshots/addnew.png)
+![img](/screenshots/postwithcomment)
 
 ##Coming Soon
 
-*User authintication, login
-*Categories with filters
-*Search
-*Nested comments
-*Image upload with post
-*Share via email, social networks
-*Post to social networks
+* User authintication, login
+* Categories with filters
+* Search
+* Nested comments
+* Image upload with post
+* Share via email, social networks
+* Post to social networks
 
 ##Shout Outs
 
-*To all the consultants. Learned so much and got lots of help. Project would not have come together with out them. 
+* To all the consultants. Learned so much and got lots of help. Project would not have come together with out them. 
 
-*To Matt L. for helping me get the ball rolling on login/auth even though it's not fully implemented yet. 
+* To Matt L. for helping me get the ball rolling on login/auth even though it's not fully implemented yet. 
 
-*To Michael N. who always has bits of info that are super useful and is always willing to help troubleshoot bugs. 
+* To Michael N. who always has bits of info that are super useful and is always willing to help troubleshoot bugs. 
 
-*And to all my fellow developers who are always positive, encoraging and willing to share code!
+* And to all my fellow developers who are always positive, encoraging and willing to share code!
 
 
 
