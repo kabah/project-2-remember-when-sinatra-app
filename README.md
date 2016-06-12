@@ -1,7 +1,7 @@
 # Remember When
 ### by Kabah Conda
 
-[Site](rememberwhen.herokuapp.com)
+[Site](http://rememberwhen.herokuapp.com)
 
 Remember When allows users to post and share their memories as anecdotes. 
 ![img](/screenshots/homePage.png)
