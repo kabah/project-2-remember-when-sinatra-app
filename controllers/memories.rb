@@ -9,6 +9,7 @@ class RememberWhen < Sinatra::Base
 	#show
 	get '/:id' do
 		@memory = Memory.find(params[:id])
+		@memoryc = @memory.comments.order(id: :asc)
 		erb :show
 	end
 

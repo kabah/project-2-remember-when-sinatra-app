@@ -6,7 +6,7 @@ Bundler.require
 require './app'
 
 require './models/memory'
-require './models/comments'
+require './models/comment'
 
 require './controllers/memories'
 require './controllers/comments'
