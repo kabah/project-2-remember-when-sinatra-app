@@ -1,9 +1,13 @@
 
 <div class="well">
-	<h4>Add New Memory:</h4>
+	<h4>Add New Memory: *All Fields Required*</h4>
 	<form role=form action='/' method="post">
 		<div class="form-group">
 			<input class="form-control" name="memory[name]" placeholder="Name">
+			<% if session[:errors] && session[:title][:title]
+ %>
+ 			<p id="title-error" style="color: red;"><%= session[:title][:title] %></p>
+ 			<% end %>
 			<input class="form-control" name="memory[title]" maxlength="140" placeholder="Remember When...">
 			<textarea class="form-control" name="memory[content]" rows="10" cols="41" maxlength="1000" placeholder="Share your story..."></textarea>
 		</div>

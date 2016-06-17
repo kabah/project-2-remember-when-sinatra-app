@@ -1,15 +1,23 @@
 class RememberWhen < Sinatra::Base
-	
+	configure do
+		enable  :sessions, :logging, :raise_errors
+	end
+
 	#new
 	get '/new' do
 		@memory = Memory.new
+		log = Logger.new('test.log')
+		errors = session[:errors]
+		log.info "ERRORS: #{errors.inspect}"
+		puts "ERRORS: #{errors.inspect}"
+
 		erb :new
 	end
 	
 	#show
 	get '/:id' do
 		@memory = Memory.find(params[:id])
-		@memoryc = @memory.comments.order(id: :asc)
+		@comments = @memory.comments.order(id: :asc)
 		erb :show
 	end
 
@@ -17,11 +25,9 @@ class RememberWhen < Sinatra::Base
 	#create
 	post '/' do
 		@memory = Memory.new(params[:memory])
-		if @memory.save
-			redirect("/")
-		else
-			erb :new 
-		end
+		url = @memory.save ? '/' : '/new'
+		session[:errors] = @memory.errors.messages
+		redirect url
 	end
 
 	#edit

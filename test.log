@@ -1,0 +1,28 @@
+# Logfile created on 2016-06-13 22:34:09 -0700 by logger.rb/53141
+I, [2016-06-13T22:34:09.253519 #24336]  INFO -- : ["Title Can't be blank"]
+I, [2016-06-13T22:34:09.253598 #24336]  INFO -- : nil
+I, [2016-06-13T23:02:44.930004 #24586]  INFO -- : ERRORS 1: ["Title Can't be blank", "Content Can't be blank"]
+I, [2016-06-13T23:02:44.930149 #24586]  INFO -- : ERRORS 2: nil
+I, [2016-06-13T23:02:44.930251 #24586]  INFO -- : ERRORS 3: {"Title Can't be blank"=>nil}
+I, [2016-06-13T23:06:25.051542 #24617]  INFO -- : ERRORS 1: {:title=>["Can't be blank"], :content=>["Can't be blank"]}
+I, [2016-06-13T23:09:36.406777 #24642]  INFO -- : ERRORS 1: {:title=>["Can't be blank"], :content=>["Can't be blank"]}
+I, [2016-06-13T23:09:36.406885 #24642]  INFO -- : ERRORS 2: {:title=>["Can't be blank"], :content=>["Can't be blank"]}
+I, [2016-06-13T23:09:36.406990 #24642]  INFO -- : ERRORS 3: {:title=>["Can't be blank"], :content=>["Can't be blank"]}
+I, [2016-06-13T23:09:36.407112 #24642]  INFO -- : ERRORS 4: "content%5B%5D=Can%27t+be+blank&title%5B%5D=Can%27t+be+blank"
+I, [2016-06-13T23:10:47.363779 #24656]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:12:17.380093 #24669]  INFO -- : ERRORS 1: {:title=>["Can't be blank"], :content=>["Can't be blank"]}
+I, [2016-06-13T23:12:17.380195 #24669]  INFO -- : ERRORS 2: {:title=>["Can't be blank"], :content=>["Can't be blank"]}
+I, [2016-06-13T23:12:17.380275 #24669]  INFO -- : ERRORS 3: {:title=>["Can't be blank"], :content=>["Can't be blank"]}
+I, [2016-06-13T23:12:17.380401 #24669]  INFO -- : ERRORS 4: "content%5B%5D=Can%27t+be+blank&title%5B%5D=Can%27t+be+blank"
+I, [2016-06-13T23:12:17.773025 #24671]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:18:15.157392 #24737]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:18:55.367726 #24746]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:22:51.637504 #24790]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:24:30.891023 #24808]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:26:44.082404 #24836]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:33:40.697371 #24897]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:34:31.923307 #24909]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:36:28.252240 #24927]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:45:52.566543 #25033]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:48:06.595824 #25055]  INFO -- : ERRORS: nil
+I, [2016-06-13T23:56:10.511390 #25303]  INFO -- : ERRORS: nil
