@@ -2,6 +2,8 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
+enable :sessions
+
 
 require './app'
 

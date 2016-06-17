@@ -1,8 +1,6 @@
 class RememberWhen < Sinatra::Base
-	configure do
 		enable  :sessions, :logging, :raise_errors
-  end
-
+	
 	#index
 	get '/' do
 		@memories = Memory.order(id: :desc).all

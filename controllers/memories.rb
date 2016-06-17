@@ -1,8 +1,6 @@
 class RememberWhen < Sinatra::Base
-	configure do
-		enable  :sessions, :logging, :raise_errors
-	end
-
+	enable  :sessions, :logging, :raise_errors
+	
 	#new
 	get '/new' do
 		@memory = Memory.new
