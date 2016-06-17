@@ -13,6 +13,5 @@ require './models/comment'
 require './controllers/memories'
 require './controllers/comments'
 
-# require './db/seeds'
 
 run RememberWhen
