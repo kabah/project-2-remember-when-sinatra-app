@@ -1,8 +1,6 @@
 require_relative '../models/memory'
 require 'faker'
 
-Memory.destroy_all
-
 10.times do 
 	m = Memory.new
 	m.name = Faker::Name.first_name
