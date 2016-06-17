@@ -4,11 +4,6 @@ class RememberWhen < Sinatra::Base
 	#new
 	get '/new' do
 		@memory = Memory.new
-		log = Logger.new('test.log')
-		errors = session[:errors]
-		log.info "ERRORS: #{errors.inspect}"
-		puts "ERRORS: #{errors.inspect}"
-
 		erb :new
 	end
 	
@@ -23,9 +18,11 @@ class RememberWhen < Sinatra::Base
 	#create
 	post '/' do
 		@memory = Memory.new(params[:memory])
-		url = @memory.save ? '/' : '/new'
-		session[:errors] = @memory.errors.messages
-		redirect url
+		if @memory.save 
+			redirect '/'
+		else 
+			redirect '/new'
+		end
 	end
 
 	#edit
