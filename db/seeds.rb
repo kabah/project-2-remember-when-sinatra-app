@@ -1,4 +1,4 @@
-require_relative '../models/memory'
+require_relative "../models/memory"
 require 'faker'
 
 10.times do 
