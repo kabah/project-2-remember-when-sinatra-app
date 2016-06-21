@@ -1,4 +1,4 @@
-require_relative '../models/memory'
+require_relative "../models/memory"
 require 'faker'
 
 Memory.destroy_all

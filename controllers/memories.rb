@@ -17,11 +17,11 @@ class RememberWhen < Sinatra::Base
 
 	#create
 	post '/' do
-		@memory = Memory.new(params[:memory])
-		if @memory.save 
+		@memory = Memory.create(params[:memory])
+		if @memory.name == "" || @memory.title == "" || @memory.content == ""
+			redirect ("/#{@memory.id}/edit")
+		else
 			redirect '/'
-		else 
-			redirect '/new'
 		end
 	end
 
@@ -34,10 +34,11 @@ class RememberWhen < Sinatra::Base
 	#update
 	post '/:id' do
 		@memory = Memory.find(params[:id])
-		if @memory.update_attributes(params[:memory])
-			redirect("/#{@memory.id}")			
+		@memory.update_attributes(params[:memory])
+		if @memory.name == "" || @memory.title == "" || @memory.content == ""
+			redirect ("/#{@memory.id}/edit")
 		else
-			erb :edit
+			redirect("/#{@memory.id}")			
 		end
 	end
 
